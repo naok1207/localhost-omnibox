@@ -1,0 +1,19 @@
+{
+  "name": "localhost",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "localhostへのアクセスを効率化します。\n\n 利用方法\n1. 検索バーに 'l' を入力し、tabまたはspaceをクリック。\n2. 開きたいポートを入力し、Enter。\nポート未入力時には3000番を表示します。",
+  "icons": {
+    "16": "icon.jpg",
+    "48": "icon.jpg",
+    "128": "icon.jpg"
+  },
+  "omnibox": {
+    "keyword": "l"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {},
+  "permissions": ["activeTab"]
+}
